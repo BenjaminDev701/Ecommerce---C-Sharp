@@ -1,0 +1,27 @@
+services:
+  sql:
+  #version en especifico de la version
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    #nombre del contenedor
+    container_name: sqlserver2022
+    #puerto de la maquina local
+    ports:
+      - "1433:1433"
+    environment:
+    #aceptamos los terminos y condicones de uso de microsoft
+      ACCEPT_EULA: "1"
+      #constraseña del usuario o SA
+      MSSQL_SA_PASSWORD: "MyStrongPass123"
+      #Version gratuita de SQL
+      MSSQL_PID: "Developer"
+      #Donde guardamos los datos de la bd para que persistan
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+volumes:
+#donde guardaremos fisicamente en el proyecto los datos de la bd
+  sqlserverdata:
+# Comandos útiles:
+# Levantar los contenedores en segundo plano:
+#   docker-compose up -d
+# Apagar y eliminar contenedores (no borra los volúmenes):
+#   docker-compose down
