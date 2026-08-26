@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "M3k+rgIWVPw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\benja\\Desktop\\Cursos\\E-commerce\\API-Ecommerce\\API-Ecommerce.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\benja\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\benja\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
